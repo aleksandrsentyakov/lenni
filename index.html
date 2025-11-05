@@ -2,78 +2,103 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+
     <title>Lenni Art - Арт-пространство</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <a class="logo" href="#">Lenni</a>
-        <ul class="nav-list">
-          <li><a class="nav-link" href="#events">Мероприятия</a></li>
-          <li><a class="nav-link" href="#blog">Блог</a></li>
-          <li><a class="nav-link" href="#about">О нас</a></li>
-          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+  <body class="page">
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo" href="#">
+          <img
+            src="assets/images/logo.svg"
+            alt="Lenni Art"
+            width="202"
+            height="147"
+          />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#events">Мероприятия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#blog">Блог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Контакты</a>
+          </li>
         </ul>
-        <button class="login-btn" type="button">Войти</button>
+        <button class="nav__button" type="button">Войти</button>
       </nav>
     </header>
-    <main class="main-content">
-      <section class="hero-section">
-        <h1 class="hero-title">АРТ — ПРОСТРАНСТВО</h1>
-        <p class="hero-subtitle">Для тех, кто горит сердцем и делом</p>
-        <p class="hero-text">Место для настоящего</p>
-        <div class="hero-buttons">
-          <button class="hero-btn" type="button">провести мероприятие</button>
-          <button class="hero-btn" type="button">стать арендатором</button>
+
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">АРТ — ПРОСТРАНСТВО</h1>
+        <p class="hero__subtitle">Для тех, кто горит сердцем и делом</p>
+        <p class="hero__text">Место для настоящего</p>
+        <div class="hero__buttons">
+          <button class="hero__button" type="button">
+            провести мероприятие
+          </button>
+          <button class="hero__button" type="button">стать арендатором</button>
         </div>
       </section>
-      <section class="about-section" id="about">
-        <h2 class="section-title">О нас</h2>
-        <div class="about-content">
-          <h3 class="project-title">Проект «Millennials»</h3>
-          <p class="project-text">
+
+      <section class="about" id="about">
+        <h2 class="about__title">О нас</h2>
+        <div class="about__content">
+          <h3 class="about__project-title">Проект «Millennials»</h3>
+          <p class="about__project-text">
             Помогаем молодым воплощать творческие идеи в жизнь
           </p>
         </div>
       </section>
-      <section class="events-section" id="events">
-        <h2 class="section-title">Мероприятия</h2>
-        <div class="events-grid">
+
+      <section class="events" id="events">
+        <h2 class="events__title">Мероприятия</h2>
+        <div class="events__grid">
           <article class="event-card">
-            <h3 class="event-name">NIRVANA</h3>
-            <p class="event-desc">Слушаем альбом Nirvana</p>
-            <time class="event-date">07.12.2024</time>
+            <h3 class="event-card__title">NIRVANA</h3>
+            <p class="event-card__description">Слушаем альбом Nirvana</p>
+            <time class="event-card__date">07.12.2024</time>
           </article>
           <article class="event-card">
-            <h3 class="event-name">Подкасты</h3>
-            <p class="event-desc">Обсуждаем интересные темы</p>
-            <time class="event-date">14.12.2024</time>
+            <h3 class="event-card__title">Подкасты</h3>
+            <p class="event-card__description">Обсуждаем интересные темы</p>
+            <time class="event-card__date">14.12.2024</time>
           </article>
         </div>
       </section>
-      <section class="blog-section" id="blog">
-        <h2 class="section-title">Блог</h2>
-        <div class="blog-grid">
+
+      <section class="blog" id="blog">
+        <h2 class="blog__title">Блог</h2>
+        <div class="blog__grid">
           <article class="blog-post">
-            <h3 class="post-title">Фотосессия в Театре Драмы</h3>
-            <p class="post-excerpt">Организовали съемку для бренда одежды</p>
-            <time class="post-date">26.11.2024</time>
+            <h3 class="blog-post__title">Фотосессия в Театре Драмы</h3>
+            <p class="blog-post__excerpt">
+              Организовали съемку для бренда одежды
+            </p>
+            <time class="blog-post__date">26.11.2024</time>
           </article>
         </div>
       </section>
-      <section class="contacts-section" id="contacts">
-        <h2 class="section-title">Контакты</h2>
-        <div class="contacts-content">
-          <address class="contact-address">
-            <p class="address-line">Томск, Красноармейская 146</p>
-            <p class="address-line">2 этаж, оф. 206</p>
-            <div class="contact-department">
-              <h4 class="dept-title">Отдел аренды</h4>
-              <a class="contact-phone" href="tel:+73822907256"
+
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__content">
+          <address class="contacts__address">
+            <p class="contacts__address-line">Томск, Красноармейская 146</p>
+            <p class="contacts__address-line">2 этаж, оф. 206</p>
+            <div class="contacts__department">
+              <h4 class="contacts__department-title">Отдел аренды</h4>
+              <a class="contacts__phone" href="tel:+73822907256"
                 >8 (3822) 90-72-56</a
               >
-              <a class="contact-email" href="mailto:idat@tusur.ru"
+              <a class="contacts__email" href="mailto:idat@tusur.ru"
                 >idat@tusur.ru</a
               >
             </div>
@@ -81,16 +106,17 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="footer-content">
-        <div class="footer-logo">Lenni</div>
-        <nav class="footer-nav">
-          <a class="footer-link" href="#events">Мероприятия</a>
-          <a class="footer-link" href="#blog">Блог</a>
-          <a class="footer-link" href="#contacts">Контакты</a>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__logo">Lenni</div>
+        <nav class="footer__nav">
+          <a class="footer__link" href="#events">Мероприятия</a>
+          <a class="footer__link" href="#blog">Блог</a>
+          <a class="footer__link" href="#contacts">Контакты</a>
         </nav>
-        <div class="footer-copyright">
-          <p>&copy; Millennials 2025</p>
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">&copy; Millennials 2025</p>
         </div>
       </div>
     </footer>
