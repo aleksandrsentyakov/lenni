@@ -488,3 +488,9 @@ body {
   -webkit-transition: none;
   transition: none;
 }
+.home {
+  padding: 100px 0;
+}
+.home__listing {
+  margin-bottom: 95px;
+}
