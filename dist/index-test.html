@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lenni Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.min.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <a href="index.html" class="page-header__logo">
+          <img
+            src="assets/images/logo.svg"
+            class="page-header__logo-icon"
+            alt="logo"
+          />
+        </a>
+        <nav class="page-header__nav">
+          <a href="#" class="page-header__nav-link">Мероприятия</a>
+          <a href="#" class="page-header__nav-link">Блог</a>
+          <a href="#" class="page-header__nav-link">О нас</a>
+          <a href="#" class="page-header__nav-link">Контакты</a>
+        </nav>
+        <div class="page-header__right-block">
+          <a href="#" class="page-header__btn btn">Войти</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="body">
+      <main class="main">
+        <!-- ТЕСТОВАЯ КНОПКА ДЛЯ ПОПАПА -->
+        <div style="padding: 50px; text-align: center">
+          <h1>Тест попапа мероприятия</h1>
+          <button
+            onclick="document.getElementById('eventPopup').style.display='flex'"
+            style="
+              background: #007bff;
+              color: white;
+              padding: 15px 30px;
+              border: none;
+              border-radius: 5px;
+              font-size: 18px;
+              cursor: pointer;
+            "
+          >
+            🎯 Открыть форму мероприятия
+          </button>
+        </div>
+
+        <section class="about">
+          <div class="about__container">
+            <div class="about__block1"></div>
+            <div class="about__block2">
+              <picture class="about__picture">
+                <img src="assets/images/pic.jpg" class="about__img" alt="pic" />
+              </picture>
+              <h3 class="about__title">
+                Мы предоставляем площади для вашего мероприятия
+              </h3>
+              <picture class="about__picture2">
+                <img
+                  src="assets/images/pic2.jpg"
+                  class="about__img"
+                  alt="pic2"
+                />
+              </picture>
+              <p class="about__text">
+                И оказываем помощь с организацией, если вам это нужно.Наша цель:
+                вовлечь в культурную жизнь города как можно больше людей, помочь
+                молодым ребятам сделать первые шаги к своей мечте и рассказать
+                всем о том, что их волнует.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="listing home__listing">
+          <h2 class="listing__title section-title">Блог</h2>
+
+          <div class="listing__article-list">
+            <!-- prettier-ignore -->
+            <article class="article-card listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/theater-photo.jpg" alt="Фотосессия в стенах Театра драмы" class="article-card__img" />
+              </picture>
+            </a>
+
+            <div class="article-card__info">
+              <time class="article-card__time">26.11.2024</time>
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+
+              <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+            </div>
+          </article>
+            <article class="article-card listing__article-card">
+              <a href="#" class="article-card__link">
+                <picture class="article-card__picture">
+                  <img
+                    src="assets/images/vr-exhibition.jpg"
+                    alt="Выставка VR в Томске"
+                    class="article-card__img"
+                  />
+                </picture>
+              </a>
+
+              <div class="article-card__info">
+                <time class="article-card__time">05.11.2024</time>
+                <a href="#" class="article-card__title-link">
+                  <h4 class="article-card__title">Выставка VR в Томске</h4>
+                  <div class="article-card__arrow arrow">
+                    <svg class="arrow__icon" width="92" height="62">
+                      <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+
+                <p class="article-card__description">
+                  Клуб виртуальной реальности - это другие миры, яркие эмоции,
+                  новый опыт. ... Мы предоставляем нашим клиентам лучший игровой
+                  VR-опыт в Томске.
+                </p>
+              </div>
+            </article>
+            <article class="article-card listing__article-card">
+              <a href="#" class="article-card__link">
+                <picture class="article-card__picture">
+                  <img
+                    src="assets/images/rocking-radio.jpg"
+                    alt="Rocking radio в заброшенном ангаре"
+                    class="article-card__img"
+                  />
+                </picture>
+              </a>
+
+              <div class="article-card__info">
+                <time class="article-card__time">01.11.2024</time>
+                <a href="#" class="article-card__title-link">
+                  <h4 class="article-card__title">
+                    Rocking radio в заброшенном ангаре
+                  </h4>
+                  <div class="article-card__arrow arrow">
+                    <svg class="arrow__icon" width="92" height="62">
+                      <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                    </svg>
+                  </div>
+                </a>
+
+                <p class="article-card__description">
+                  15 электрогенераторов, километры проводов и пару тонн света.
+                  Все это для того, чтобы организовать лучшую вечеринку года для
+                  ребят из Новосибирска.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <a href="blog.html" class="listing__link link">Смотреть все</a>
+        </section>
+      </main>
+      <footer class="page-footer"></footer>
+    </div>
+
+    <div class="popup" id="eventPopup">
+      <div class="popup__content">
+        <h1>ЗАПОЛНИТЕ ФОРМУ</h1>
+        <h2>И МЫ ПОДБЕРЕМ ПЛОЩАДКУ</h2>
+
+        <form class="event-form">
+          <fieldset>
+            <legend>
+              <strong>Формат мероприятия:</strong>
+            </legend>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="format" value="master-class" />
+                Мастер-класс/семинар
+              </label>
+              <label>
+                <input type="checkbox" name="format" value="concert" />
+                Концерт/выступление
+              </label>
+              <label>
+                <input type="checkbox" name="format" value="exhibition" />
+                Выставка/показ
+              </label>
+              <label>
+                <input type="checkbox" name="format" value="other" /> Другое
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <strong>Контактные данные:</strong>
+            </legend>
+            <div class="form-group">
+              <label for="firstName">Имя*</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Фамилия*</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон*</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <strong>Данные мероприятия:</strong>
+            </legend>
+            <div class="form-group">
+              <label for="visitors">Количество планируемых посетителей</label>
+              <input type="number" id="visitors" name="visitors" min="1" />
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Дата проведения</label>
+              <input type="date" id="eventDate" name="eventDate" />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <strong>Есть пожелания? Напишите нам:</strong>
+            </legend>
+            <div class="form-group">
+              <label for="wishes"></label>
+              <textarea id="wishes" name="wishes" rows="4"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Простой скрипт для закрытия попапа
+      document.addEventListener("DOMContentLoaded", function () {
+        // Закрытие по клику на overlay
+        document
+          .querySelector(".popup__overlay")
+          .addEventListener("click", function () {
+            document.getElementById("eventPopup").style.display = "none";
+          });
+
+        // Закрытие по клику на крестик
+        document
+          .querySelector(".popup__close")
+          .addEventListener("click", function () {
+            document.getElementById("eventPopup").style.display = "none";
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -76,6 +76,85 @@
   <footer>
     <p>Footer content</p>
   </footer>
+  <div class="popup" id="eventPopup">
+    <div class="popup__content">
+      <h1>ЗАПОЛНИТЕ ФОРМУ</h1>
+      <h2>И МЫ ПОДБЕРЕМ ПЛОЩАДКУ</h2>
+
+      <form class="event-form">
+        <fieldset>
+          <legend>
+            <strong>Формат мероприятия:</strong>
+          </legend>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="format" value="master-class" />
+              Мастер-класс/семинар
+            </label>
+            <label>
+              <input type="checkbox" name="format" value="concert" />
+              Концерт/выступление
+            </label>
+            <label>
+              <input type="checkbox" name="format" value="exhibition" />
+              Выставка/показ
+            </label>
+            <label>
+              <input type="checkbox" name="format" value="other" /> Другое
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <strong>Контактные данные:</strong>
+          </legend>
+          <div class="form-group">
+            <label for="firstName">Имя*</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="Введите имя" />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Фамилия*</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Введите фамилию" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Телефон*</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required placeholder="Введите Email" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <strong>Данные мероприятия:</strong>
+          </legend>
+          <div class="form-group">
+            <label for="visitors">Количество планируемых посетителей</label>
+            <input type="number" id="visitors" name="visitors" min="1" />
+          </div>
+          <div class="form-group">
+            <label for="eventDate">Дата проведения</label>
+            <input type="date" id="eventDate" name="eventDate" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <strong>Есть пожелания? Напишите нам:</strong>
+          </legend>
+          <div class="form-group">
+            <label for="wishes"></label>
+            <textarea id="wishes" name="wishes" rows="4"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 

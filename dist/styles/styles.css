@@ -627,3 +627,9 @@ body {
 .event-form .form-submit:hover {
   background: #0056b3;
 }
+/* ВРЕМЕННО: попап для тестирования */
+.popup {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
