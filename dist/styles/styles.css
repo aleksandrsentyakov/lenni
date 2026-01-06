@@ -1017,7 +1017,7 @@ __total::after {
   font-size: 0.95em;
 }
 .page-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -1422,4 +1422,19 @@ __total::after {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+@media : ~"(max-width: 1659px)" {
+  body {
+    padding-top: 111px;
+  }
+  .page-header {
+    height: 111px;
+  }
+  .page-header__logo {
+    width: 152px;
+    height: 111px;
+  }
+  .page-header__right-block {
+    width: 152px;
+  }
 }
